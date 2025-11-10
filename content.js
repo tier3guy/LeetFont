@@ -86,30 +86,40 @@ function applyFont(fontKey) {
     styleElement.textContent = `
     /* Apply font to Monaco editor */
     .monaco-editor {
-      font-family: ${fontFamily} !important;
+        font-family: ${fontFamily} !important;
     }
-    
+
+    /* Only apply to text areas and tokens, not icons */
     .monaco-editor .view-lines,
     .monaco-editor .view-line,
-    .monaco-editor .view-line > span {
-      font-family: ${fontFamily} !important;
+    .monaco-editor .view-line > span:not(.codicon):not([class*="icon"]) {
+        font-family: ${fontFamily} !important;
     }
-    
-    /* Apply to all Monaco text tokens */
-    .monaco-editor .mtk1,
-    .monaco-editor .mtk2,
-    .monaco-editor .mtk3,
-    .monaco-editor .mtk4,
-    .monaco-editor .mtk5,
-    .monaco-editor .mtk6,
-    .monaco-editor .mtk7,
-    .monaco-editor .mtk8,
-    .monaco-editor .mtk9,
-    .monaco-editor .mtk10,
-    .monaco-editor .mtk11,
-    .monaco-editor .mtk12 {
-      font-family: ${fontFamily} !important;
+
+    /* Apply to Monaco text tokens but skip icon fonts */
+    .monaco-editor .mtk1:not(.codicon),
+    .monaco-editor .mtk2:not(.codicon),
+    .monaco-editor .mtk3:not(.codicon),
+    .monaco-editor .mtk4:not(.codicon),
+    .monaco-editor .mtk5:not(.codicon),
+    .monaco-editor .mtk6:not(.codicon),
+    .monaco-editor .mtk7:not(.codicon),
+    .monaco-editor .mtk8:not(.codicon),
+    .monaco-editor .mtk9:not(.codicon),
+    .monaco-editor .mtk10:not(.codicon),
+    .monaco-editor .mtk11:not(.codicon),
+    .monaco-editor .mtk12:not(.codicon) {
+        font-family: ${fontFamily} !important;
     }
+
+    /* Preserve codicon (icon font) rendering */
+    .codicon,
+    [class*="codicon"],
+    .monaco-icon-label,
+    .monaco-editor .codicon {
+        font-family: "codicon" !important;
+    }
+
   `;
 
     document.head.appendChild(styleElement);
