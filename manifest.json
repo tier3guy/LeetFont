@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "LeetFont",
+    "version": "1.0.0",
+    "description": "A Chrome extension that lets you customize and change the font on LeetCode for improved readability and a more personalized coding experience. Built with TypeScript and Manifest V3.",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://leetcode.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "injected.js"
+            ],
+            "matches": [
+                "https://leetcode.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_title": "LeetFont - Change Editor Font"
+    }
+}

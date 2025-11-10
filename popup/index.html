@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetFont</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LeetFont</h1>
+            <p class="tagline">Elevate your coding experience</p>
+        </div>
+
+        <div class="content">
+            <p class="description">Choose your preferred font:</p>
+
+            <div class="font-list">
+                <label class="font-option">
+                    <input type="radio" name="font" value="default" checked>
+                    <span class="font-name">Default</span>
+                    <span class="font-tag">System</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="fira-code">
+                    <span class="font-name">Fira Code</span>
+                    <span class="font-tag">Popular</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="jetbrains-mono">
+                    <span class="font-name">JetBrains Mono</span>
+                    <span class="font-tag">Modern</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="cascadia-code">
+                    <span class="font-name">Cascadia Code</span>
+                    <span class="font-tag">Microsoft</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="source-code-pro">
+                    <span class="font-name">Source Code Pro</span>
+                    <span class="font-tag">Adobe</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="consolas">
+                    <span class="font-name">Consolas</span>
+                    <span class="font-tag">Classic</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="ubuntu-mono">
+                    <span class="font-name">Ubuntu Mono</span>
+                    <span class="font-tag">Open Source</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="roboto-mono">
+                    <span class="font-name">Roboto Mono</span>
+                    <span class="font-tag">Google</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="noto-sans-mono">
+                    <span class="font-name">Noto Sans Mono</span>
+                    <span class="font-tag">Google</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="google-sans-mono">
+                    <span class="font-name">Google Sans Mono</span>
+                    <span class="font-tag">Premium</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="courier-new">
+                    <span class="font-name">Courier New</span>
+                    <span class="font-tag">Retro</span>
+                </label>
+
+                <label class="font-option">
+                    <input type="radio" name="font" value="monaco">
+                    <span class="font-name">Monaco</span>
+                    <span class="font-tag">Apple</span>
+                </label>
+            </div>
+
+            <button class="apply-btn" id="applyBtn">
+                <span class="btn-text">Apply Font</span>
+            </button>
+
+            <div class="status" id="status"></div>
+        </div>
+
+        <div class="footer">
+            <p>Made with <span class="heart">♥</span> by <a href="https://github.com/tier3guy" target="_blank">Avinash
+                    Gupta</a> <span class="aka">aka</span> <span class="username">tier3guy</span></p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
