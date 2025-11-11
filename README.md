@@ -126,19 +126,30 @@ LeetFont updates only the **font-family** property of Monaco Editor via injected
 
 ```
 LeetFont/
-├── manifest.json       # Extension configuration
-├── content.js          # Script for LeetCode pages
-├── injected.js         # Injected for Monaco API access
-├── fonts.css           # Google Font imports
-├── popup.html          # Popup UI
-├── popup.css           # Popup styling
-├── popup.js            # Popup logic
 ├── assets/
-│   ├── logo.png
-│   ├── before.png
-│   ├── after.png
-│   └── preview.png
-└── README.md
+│   ├── after.png           # After applying LeetFont (preview)
+│   ├── before.png          # Default LeetCode editor
+│   ├── extension.png       # Screenshot of popup / extension window
+│   ├── logo.png            # Main logo
+│   └── preview.png         # Combined showcase image
+│
+├── icons/
+│   ├── icon16.png          # Browser toolbar icon (16x16)
+│   ├── icon32.png          # Context menu icon (32x32)
+│   ├── icon48.png          # Extension page icon (48x48)
+│   └── icon128.png         # Chrome Web Store / large display icon
+│
+├── popup/
+│   ├── fonts.css           # Google Fonts imports
+│   ├── index.css           # Popup styling
+│   ├── index.html          # Popup UI
+│   └── index.js            # Popup functionality
+│
+├── content.js              # Script injected into LeetCode pages
+├── injected.js             # Script for Monaco editor access
+├── manifest.json           # Chrome extension manifest (v3)
+├── PRIVACY_POLICY.md       # Privacy disclosure
+└── README.md               # Documentation
 ```
 
 ---
