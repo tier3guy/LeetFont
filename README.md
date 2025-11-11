@@ -1,156 +1,227 @@
-# LeetFont
+<div align="center">
 
-A Chrome extension that allows you to change the font family in LeetCode's Monaco editor without causing cursor position issues.
+<img src="./assets/logo.png" width="110" alt="LeetFont Logo" />
 
-## Features
+# 🅻🅴🅴🆃🅵🅾🅽🆃
 
-- 🎨 **10 Popular Coding Fonts** - Choose from Fira Code, JetBrains Mono, Cascadia Code, and more
-- 🎯 **No Cursor Issues** - Carefully crafted CSS ensures cursor position stays accurate
-- 💾 **Persistent Settings** - Your font choice is saved and synced across devices
-- ⚡ **Instant Apply** - Font changes apply immediately without page refresh
-- 🚫 **No Icons** - Clean, text-only interface
+**A Chrome extension that lets you change LeetCode’s coding font — without breaking the cursor alignment.**
 
-## Installation
+<p>
+  <a href="https://chrome.google.com/webstore/detail/leetfont/your-extension-id">
+    <img src="https://img.shields.io/badge/Install%20on-Chrome%20Web%20Store-brightgreen?style=for-the-badge&logo=googlechrome" alt="Chrome Web Store" />
+  </a>
+  <img src="https://img.shields.io/badge/Manifest_Version-3-orange?style=for-the-badge" alt="Manifest V3 Badge" />
+  <img src="https://img.shields.io/github/license/avinashgupta10/leetfont?style=for-the-badge&color=blue" alt="MIT License Badge" />
+</p>
 
-### From Source (Developer Mode)
+🎨 **10+ Popular Fonts** · ⚡ **Instant Apply** · 💾 **Persistent Sync** · 🎯 **Zero Cursor Drift**
 
-1. **Download the Extension**
-   - Download or clone this repository to your computer
-   - Extract the files to a folder
-
-2. **Open Chrome Extensions**
-   - Open Google Chrome
-   - Navigate to `chrome://extensions/`
-   - Or: Menu → More Tools → Extensions
-
-3. **Enable Developer Mode**
-   - Toggle the "Developer mode" switch in the top-right corner
-
-4. **Load the Extension**
-   - Click "Load unpacked"
-   - Select the folder containing the extension files
-   - The extension will now appear in your extensions list
-
-5. **Pin the Extension (Optional)**
-   - Click the puzzle piece icon in the Chrome toolbar
-   - Find "LeetFont" and click the pin icon
-
-## Usage
-
-1. **Navigate to LeetCode**
-   - Go to [leetcode.com](https://leetcode.com)
-   - Open any problem with the code editor
-
-2. **Open the Extension**
-   - Click the LeetFont extension icon in your toolbar
-
-3. **Select a Font**
-   - Choose your preferred font from the list
-   - The font will be applied immediately
-
-4. **Enjoy Coding!**
-   - Your font preference is saved automatically
-   - It will persist across browser sessions and devices (if Chrome sync is enabled)
-
-## Available Fonts
-
-All fonts marked with 📦 are automatically downloaded from Google Fonts - no installation required!
-
-- **Default** - LeetCode's default Monaco editor font
-- **Fira Code** 📦 - Popular font with programming ligatures (auto-loaded)
-- **JetBrains Mono** 📦 - Modern font designed for developers (auto-loaded)
-- **Cascadia Code** - Microsoft's font for coding (system font)
-- **Source Code Pro** 📦 - Adobe's monospace font (auto-loaded)
-- **Consolas** - Classic Microsoft monospace font (system font)
-- **Ubuntu Mono** 📦 - Ubuntu's monospace font (auto-loaded)
-- **Roboto Mono** 📦 - Google's monospace font (auto-loaded)
-- **Courier New** - Traditional typewriter font (system font)
-- **Monaco** - Apple's classic monospace font (system font)
-
-## Technical Details
-
-### How It Fixes Cursor Position Issues
-
-The extension addresses Monaco editor cursor positioning problems by:
-
-1. **Only modifying `font-family`** - Never changes `font-size` or `line-height`
-2. **Using `!important` flags** - Overrides Monaco's inline styles properly
-3. **Targeting correct selectors** - Applies fonts to all relevant Monaco classes
-4. **Monospace fonts only** - Ensures consistent character widths
-5. **No layout changes** - Preserves Monaco's internal layout calculations
-
-### Files Structure
-
-```
-Leetcode-Font-Changer/
-├── manifest.json       # Extension configuration
-├── content.js          # Content script (runs on LeetCode pages)
-├── injected.js         # Page context script (Monaco API access)
-├── fonts.css           # Google Fonts imports
-├── popup.html          # Extension popup interface
-├── popup.css           # Popup styling
-├── popup.js            # Popup functionality
-└── README.md           # This file
-```
-
-### Permissions
-
-- **storage** - To save your font preference
-- **activeTab** - To apply fonts to the current LeetCode tab
-- **host_permissions** - Limited to `leetcode.com` only
-
-## Troubleshooting
-
-### Font not applying?
-
-1. Refresh the LeetCode page after selecting a font
-2. Make sure you're on a LeetCode problem page with the editor open
-3. Most fonts are auto-loaded from Google Fonts, so no installation needed!
-
-### Cursor still misaligned?
-
-1. Try selecting "Default" font first, then your preferred font
-2. Hard refresh the page (Ctrl+Shift+R or Cmd+Shift+R)
-3. Clear your browser cache and reload
-
-### Extension not showing in toolbar?
-
-1. Go to `chrome://extensions/`
-2. Verify the extension is enabled
-3. Click the puzzle icon and pin "LeetFont"
-
-## Browser Compatibility
-
-- **Chrome** - Fully supported (v88+)
-- **Edge** - Fully supported (Chromium-based)
-- **Brave** - Fully supported
-- **Opera** - Should work (Chromium-based)
-- **Firefox** - Not supported (requires Manifest V2 adaptation)
-
-## Privacy
-
-This extension:
-- ✅ Only runs on leetcode.com
-- ✅ Only stores your font preference locally
-- ✅ Does not collect any personal data
-- ✅ Does not make external network requests
-- ✅ Open source - inspect the code yourself
-
-## Contributing
-
-Feel free to submit issues or pull requests if you:
-- Find bugs
-- Want to add more fonts
-- Have suggestions for improvements
-
-## License
-
-MIT License - Feel free to use and modify as needed.
-
-## Credits
-
-Created for developers who want a better coding experience on LeetCode! 🚀
+</div>
 
 ---
 
-**Note**: This extension is not affiliated with or endorsed by LeetCode.
+## 🌈 Preview
+
+### 🧠 Before — Default LeetCode Editor
+> The classic Monaco font — functional but bland.
+
+<img src="./assets/before.png" alt="Before - Default LeetCode Editor" width="700" />
+
+### ✨ After — With LeetFont
+> Instantly upgrade your coding experience with fonts like **JetBrains Mono**, **Fira Code**, and **Cascadia Code**.
+
+<img src="./assets/after.png" alt="After - LeetFont Applied" width="700" />
+
+---
+
+## 🚀 Quick Install
+
+### 🧩 From Chrome Web Store  
+> Click below to install directly from the Chrome Web Store:
+
+<p align="center">
+  <a href="https://chrome.google.com/webstore/detail/leetfont/your-extension-id">
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Install%20LeetFont-Click%20Here-brightgreen?style=for-the-badge&logo=googlechrome" alt="Install LeetFont" />
+  </a>
+</p>
+
+### 🧰 Manual Installation (Developer Mode)
+
+1. **Clone or Download**
+
+   ```bash
+      git clone https://github.com/avinashgupta10/LeetFont.git
+   ```
+
+2. **Open Extensions**
+
+   * Visit `chrome://extensions/`
+   * Enable **Developer mode**
+
+3. **Load Unpacked**
+
+   * Click **Load unpacked**
+   * Select your `LeetFont` folder
+
+4. **Pin the Extension**
+
+   * Click 🧩 icon → Pin **LeetFont**
+
+---
+
+## 💡 Features
+
+| 🌟 Feature                      | 🧩 Description                                                 |
+| ------------------------------- | -------------------------------------------------------------- |
+| 🎨 **10+ Coding Fonts**         | Choose from Fira Code, JetBrains Mono, Cascadia Code, and more |
+| 🎯 **Perfect Cursor Alignment** | Font changes won’t mess up Monaco’s cursor                     |
+| ⚡ **Instant Apply**             | No need to refresh — changes apply immediately                |
+| 💾 **Persistent Sync**          | Saved preferences sync across Chrome devices                   |
+| 🧼 **Minimal UI**               | No clutter, just a clean font picker                           |
+| 🔒 **Privacy First**            | Runs only on `leetcode.com`, no tracking or analytics          |
+
+---
+
+## 🖋️ Available Fonts
+
+All fonts marked with 📦 are auto-loaded from **Google Fonts** — no manual setup needed.
+
+| Font               | Type        | Notes                             |
+| ------------------ | ----------- | --------------------------------- |
+| Default            | System      | LeetCode’s Monaco font            |
+| Fira Code 📦       | Google Font | With ligatures                    |
+| JetBrains Mono 📦  | Google Font | Developer-friendly                |
+| Cascadia Code      | System      | Microsoft’s modern monospace font |
+| Source Code Pro 📦 | Google Font | Clean and sharp                   |
+| Consolas           | System      | Classic Windows monospace font    |
+| Ubuntu Mono 📦     | Google Font | Lightweight and readable          |
+| Roboto Mono 📦     | Google Font | Google’s clean monospace          |
+| Courier New        | System      | Vintage style                     |
+| Monaco             | System      | macOS legacy monospace font       |
+
+---
+
+## 🪄 Usage
+
+1. Open [leetcode.com](https://leetcode.com)
+2. Go to any coding problem
+3. Click the **LeetFont** icon in the toolbar
+4. Select your favorite font
+5. 🎉 Instantly applied & saved!
+
+---
+
+## 🧠 How It Works
+
+LeetFont updates only the **font-family** property of Monaco Editor via injected CSS — keeping the editor’s layout and cursor calculations intact.
+
+* ✅ Monospace-only fonts
+* ✅ No `font-size` or `line-height` modifications
+* ✅ Safe CSS overrides with `!important`
+* ✅ Preserves all Monaco editor internals
+
+---
+
+## 🗂️ File Structure
+
+```
+LeetFont/
+├── manifest.json       # Extension configuration
+├── content.js          # Script for LeetCode pages
+├── injected.js         # Injected for Monaco API access
+├── fonts.css           # Google Font imports
+├── popup.html          # Popup UI
+├── popup.css           # Popup styling
+├── popup.js            # Popup logic
+├── assets/
+│   ├── logo.png
+│   ├── before.png
+│   ├── after.png
+│   └── preview.png
+└── README.md
+```
+
+---
+
+## 🧩 Permissions
+
+* **storage** → Save your font choice
+* **activeTab** → Apply fonts to the active tab
+* **host_permissions** → Restricted to `leetcode.com` only
+
+---
+
+## 🧰 Troubleshooting
+
+**Font not applying?**
+
+* Refresh the LeetCode page
+* Make sure you're on a problem page
+* Try switching back to “Default” first
+
+**Cursor still misaligned?**
+
+* Hard refresh (`Ctrl + Shift + R`)
+* Clear cache and reload
+
+**Extension not visible?**
+
+* Enable it under `chrome://extensions/`
+* Pin it from Chrome’s toolbar
+
+---
+
+## 🌍 Browser Compatibility
+
+| Browser            | Status                                 |
+| ------------------ | -------------------------------------- |
+| 🟢 Chrome          | ✅ Fully Supported                      |
+| 🟢 Edge (Chromium) | ✅ Fully Supported                      |
+| 🟢 Brave           | ✅ Fully Supported                      |
+| 🟠 Opera           | ⚠️ Untested but likely supported       |
+| 🔴 Firefox         | ❌ Not supported (Manifest V2 required) |
+
+---
+
+## 🔐 Privacy
+
+LeetFont respects your privacy completely:
+
+* ✅ Runs **only** on `leetcode.com`
+* ✅ No analytics, ads, or tracking
+* ✅ Only stores font preference locally
+* ✅ Google Fonts loaded securely
+* ✅ 100% open-source and transparent
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+If you find a bug 🐛, want to add more fonts ✍️, or have ideas 💡 — open an issue or a PR.
+
+---
+
+## 📜 License
+
+**MIT License**
+Use, modify, and share freely.
+
+---
+
+<div align="center">
+  <img src="./assets/preview.png" width="700" alt="LeetFont Preview" />
+  <br><br>
+  <b>Created for developers who want a better LeetCode coding experience. 🚀</b>
+  <br>
+  <sub>Not affiliated with or endorsed by LeetCode.</sub>
+</div>
+```
+
+---
+
+### 🧩 How to Use This:
+
+* Replace `your-extension-id` in both **Chrome Web Store links** with your real extension ID once published.
+* Make sure `before.png`, `after.png`, and `preview.png` are clean, properly cropped screenshots (recommended width: 1200px).
+* Add your logo (`logo.png`) to `assets/` (ideally 256×256px transparent background).

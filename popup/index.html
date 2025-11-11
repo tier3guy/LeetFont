@@ -10,87 +10,48 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>LeetFont</h1>
-            <p class="tagline">Elevate your coding experience</p>
+    <div id="container">
+        <div id="header">
+            <h1 id="logo">Leetfont</h1>
+            <p class="decp">A Chrome extension that allows you to change the font family in LeetCode's Monaco editor
+                without causing cursor position issues.</p>
         </div>
 
-        <div class="content">
-            <p class="description">Choose your preferred font:</p>
+        <div id="main">
+            <div class="font-container">
+                <label for="fontSelect" class="font-label">Choose your preferred font:</label>
+                <select id="fontSelect" class="font-select">
+                    <option value="default">Default (System)</option>
+                    <option value="fira-code">Fira Code</option>
+                    <option value="jetbrains-mono">JetBrains Mono</option>
+                    <option value="source-code-pro">Source Code Pro</option>
+                    <option value="cascadia-code">Cascadia Code</option>
+                    <option value="roboto-mono">Roboto Mono</option>
+                    <option value="ubuntu-mono">Ubuntu Mono</option>
+                    <option value="noto-sans-mono">Noto Sans Mono</option>
+                    <option value="google-sans-mono">Google Sans Code</option>
+                    <option value="courier-prime">Courier Prime</option>
+                </select>
 
-            <div class="font-list">
-                <label class="font-option">
-                    <input type="radio" name="font" value="default" checked>
-                    <span class="font-name">Default</span>
-                    <span class="font-tag">System</span>
-                </label>
+                <div class="divider">
+                    <span>or</span>
+                </div>
 
-                <label class="font-option">
-                    <input type="radio" name="font" value="fira-code">
-                    <span class="font-name">Fira Code</span>
-                    <span class="font-tag">Popular</span>
-                </label>
+                <div class="custom-font">
+                    <label for="fontLink" class="font-label">Import Google Font <span>(Coming Soon)</span></label>
+                    <div class="input-wrapper">
+                        <input id="fontLink" type="text" placeholder="Paste Google Font link..." disabled />
+                        <div class="shadow"></div>
+                    </div>
+                </div>
 
-                <label class="font-option">
-                    <input type="radio" name="font" value="jetbrains-mono">
-                    <span class="font-name">JetBrains Mono</span>
-                    <span class="font-tag">Modern</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="cascadia-code">
-                    <span class="font-name">Cascadia Code</span>
-                    <span class="font-tag">Microsoft</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="source-code-pro">
-                    <span class="font-name">Source Code Pro</span>
-                    <span class="font-tag">Adobe</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="ubuntu-mono">
-                    <span class="font-name">Ubuntu Mono</span>
-                    <span class="font-tag">Open Source</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="roboto-mono">
-                    <span class="font-name">Roboto Mono</span>
-                    <span class="font-tag">Google</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="noto-sans-mono">
-                    <span class="font-name">Noto Sans Mono</span>
-                    <span class="font-tag">Google</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="google-sans-mono">
-                    <span class="font-name">Google Sans Code</span>
-                    <span class="font-tag">Premium</span>
-                </label>
-
-                <label class="font-option">
-                    <input type="radio" name="font" value="courier-new">
-                    <span class="font-name">Courier Prime</span>
-                    <span class="font-tag">Retro</span>
-                </label>
+                <button class="apply-btn" id="applyBtn">Apply Font</button>
+                <div class="status" id="status"></div>
             </div>
-
-            <button class="apply-btn" id="applyBtn">
-                <span class="btn-text">Apply Font</span>
-            </button>
-
-            <div class="status" id="status"></div>
         </div>
 
-        <div class="footer">
-            <p>Made with <span class="heart">♥</span> by <a href="https://github.com/tier3guy" target="_blank">Avinash
-                    Gupta</a> <span class="aka">aka</span> <span class="username">tier3guy</span></p>
+        <div id="footer">
+            <p>Made with 💖 by <a href="https://tier3guy.com">tier3guy</a></p>
         </div>
     </div>
 
