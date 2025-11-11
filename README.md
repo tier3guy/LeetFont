@@ -1,8 +1,8 @@
 <div align="center">
+  
+<img width="1400" height="560" alt="Marquee - Leetfont" src="https://github.com/user-attachments/assets/f14cfcc5-cebb-4c54-b91d-c6231b2f4951" />
 
-<img src="./assets/logo.png" width="110" alt="LeetFont Logo" />
-
-# 🅻🅴🅴🆃🅵🅾🅽🆃
+<p></p>
 
 **A Chrome extension that lets you change LeetCode’s coding font — without breaking the cursor alignment.**
 
