@@ -12,8 +12,8 @@
   <a href="https://chromewebstore.google.com/detail/mlgcallpmpnghedhljlbkjelocmmdoei">
     <img src="https://img.shields.io/badge/Install%20on-Chrome%20Web%20Store-brightgreen?style=for-the-badge&logo=googlechrome" alt="Chrome Web Store" />
   </a>
-  <img src="https://img.shields.io/badge/Manifest_Version-3-orange?style=for-the-badge" alt="Manifest V3 Badge" />
-  <img src="https://img.shields.io/github/license/avinashgupta10/leetfont?style=for-the-badge&color=blue" alt="MIT License Badge" />
+  <!-- <img src="https://img.shields.io/badge/Manifest_Version-3-orange?style=for-the-badge" alt="Manifest V3 Badge" />
+  <img src="https://img.shields.io/github/license/avinashgupta10/leetfont?style=for-the-badge&color=blue" alt="MIT License Badge" /> -->
 </p>
 
 🎨 **10+ Popular Fonts** · ⚡ **Instant Apply** · 💾 **Persistent Sync** · 🎯 **Zero Cursor Drift**
