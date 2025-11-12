@@ -1,13 +1,15 @@
 <div align="center">
   
+<a href="https://chromewebstore.google.com/detail/mlgcallpmpnghedhljlbkjelocmmdoei">
 <img width="1400" height="560" alt="Marquee - Leetfont" src="https://github.com/user-attachments/assets/f14cfcc5-cebb-4c54-b91d-c6231b2f4951" />
+</a>
 
 <p></p>
 
 **A Chrome extension that lets you change LeetCode’s coding font — without breaking the cursor alignment.**
 
 <p>
-  <a href="https://chrome.google.com/webstore/detail/leetfont/your-extension-id">
+  <a href="https://chromewebstore.google.com/detail/mlgcallpmpnghedhljlbkjelocmmdoei">
     <img src="https://img.shields.io/badge/Install%20on-Chrome%20Web%20Store-brightgreen?style=for-the-badge&logo=googlechrome" alt="Chrome Web Store" />
   </a>
   <img src="https://img.shields.io/badge/Manifest_Version-3-orange?style=for-the-badge" alt="Manifest V3 Badge" />
@@ -40,7 +42,7 @@
 > Click below to install directly from the Chrome Web Store:
 
 <p align="center">
-  <a href="https://chrome.google.com/webstore/detail/leetfont/your-extension-id">
+  <a href="https://chromewebstore.google.com/detail/mlgcallpmpnghedhljlbkjelocmmdoei">
     <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Install%20LeetFont-Click%20Here-brightgreen?style=for-the-badge&logo=googlechrome" alt="Install LeetFont" />
   </a>
 </p>
