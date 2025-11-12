@@ -15,8 +15,8 @@ const FONTS = {
     'ubuntu-mono': '"Ubuntu Mono", Menlo, Monaco, "Courier New", monospace',
     'roboto-mono': '"Roboto Mono", Menlo, Monaco, "Courier New", monospace',
     'noto-sans-mono': '"Noto Sans Mono", Menlo, Monaco, "Courier New", monospace',
-    'google-sans-mono': '"Google Sans Mono", "Google Sans", Menlo, Monaco, "Courier New", monospace',
-    'courier-new': '"Courier New", Courier, monospace',
+    'google-sans-mono': '"Google Sans Code", "Google Sans", Menlo, Monaco, "Courier New", monospace',
+    'courier-new': '"Courier Prime", Courier, monospace',
     'monaco': 'Monaco, Menlo, "Courier New", monospace'
 };
 
@@ -59,7 +59,7 @@ function loadGoogleFonts() {
     const link = document.createElement('link');
     link.id = 'leetfont-google-fonts';
     link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Ubuntu+Mono:wght@400;700&family=Noto+Sans+Mono:wght@300;400;500;600;700&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Mono:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet';
 
     document.head.appendChild(link);
     console.log('[LeetFont] Google Fonts loaded');

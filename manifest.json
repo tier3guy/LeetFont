@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "LeetFont",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A Chrome extension that lets you customize and change the font on LeetCode for improved readability.",
     "permissions": [
         "storage",
